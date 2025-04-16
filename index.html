@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      padding: 10px;
+    }
+    .card a {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>IST 250 Class Assignments And Projects</p>
+  </header>
+
+  <div class="container">
+    <div class="portfolio-grid">
+      
+      <!-- Practice Activities -->
+      <div class="card">
+        <img src="img/practice1.png" alt="Practice Activity 1">
+        <h3>Practice Activity 1</h3>
+        <a href="practice1/index.html">View Assignment</a>
+      </div>
+      <div class="card">
+        <img src="img/practice2.png" alt="Practice Activity 2">
+        <h3>Practice Activity 2</h3>
+        <a href="practice2/index.html">View Assignment</a>
+      </div>
+      <div class="card">
+        <img src="img/practice3.png" alt="Practice Activity 3">
+        <h3>Practice Activity 3</h3>
+        <a href="practice3/album/index.html">View Assignment</a>
+      </div>
+
+      <!-- Partner Labs -->
+      <div class="card">
+        <img src="img/lab1.png" alt="Partner Lab 1">
+        <h3>Partner Lab 1</h3>
+        <a href="lab1/index.html">View Lab</a>
+      </div>
+      <div class="card">
+        <img src="img/lab2.png" alt="Partner Lab 2">
+        <h3>Partner Lab 2</h3>
+        <a href="lab2/index.html">View Lab</a>
+      </div>
+
+      <!-- Individual Assignments -->
+      <div class="card">
+        <img src="img/indiv1.png" alt="Individual Assignment 1">
+        <h3>Individual Assignment 1</h3>
+        <a href="indiv1/index.html">View Project</a>
+      </div>
+      <div class="card">
+        <img src="img/indiv2.png" alt="Individual Assignment 2">
+        <h3>Individual Assignment 2</h3>
+        <a href="indiv2/index.html">View Project</a>
+      </div>
+      <div class="card">
+        <img src="img/indiv3.png" alt="Individual Assignment 3">
+        <h3>Individual Assignment 3</h3>
+        <a href="indiv3/index.html">View Project</a>
+      </div>
+      <div class="card">
+        <img src="img/indiv4.png" alt="Individual Assignment 4 (Under Construction)">
+        <h3>Individual Assignment 4</h3>
+        <a href="indiv4/index.html">Under Construction</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Majd Haddad. All rights reserved.
+  </footer>
+</body>
+</html>
