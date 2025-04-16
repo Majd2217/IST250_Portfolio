@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid Fan Page</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav style="background-color: #ffffff; padding: 10px;">
+        <a href="../index.html" style="color: rgb(0, 0, 0); text-decoration: none; font-weight: bold;">
+          ← Back to Main Portfolio
+        </a>
+      </nav>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Real Madrid Logo" class="logo">
+            <h1 id="greeting">Hello, Madridista!</h1>
+            <p id="message">Welcome to Real Madrid fan page.</p>
+        </header>
+
+        <div class="customization-panel">
+            <h2>Customize Your Fan Page</h2>
+            
+            <div class="form-group">
+                <label for="nameInput">Your Name:</label>
+                <input type="text" id="nameInput" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="messageInput">Your Message:</label>
+                <input type="text" id="messageInput" placeholder="Enter a custom message">
+            </div>
+            
+            <div class="form-group">
+                <label for="colorSelect">Background Color:</label>
+                <select id="colorSelect">
+                    <option value="#FFFFFF">White (Home Kit)</option>
+                    <option value="#ffa500">Orange (Away Kit)</option>
+                    <option value="#000000">Black (Third Kit)</option>
+                    <option value="#808080">Grey (2016 Away Kit)</option>
+                    <option value="#FF0000">Red (Old Red Kit)</option>
+                </select>
+            </div>
+            
+            <button id="updateButton" class="btn">Update Page</button>
+        </div>
+
+        <div class="todo-section">
+            <h2>To Do</h2>
+            <div class="form-group">
+                <input type="text" id="todoInput" placeholder="Add a Real Madrid fan task...">
+                <button id="addTodoButton" class="btn">Add Task</button>
+            </div>
+            <ol id="todoList"></ol>
+        </div>
+
+        <footer>
+            <p>¡Hala Madrid y nada más!</p>
+        </footer>
+    </div>
+</body>
+</html>
+

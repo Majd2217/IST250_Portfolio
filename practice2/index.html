@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soccer Showcase</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar content_1"
+        "sidebar content-2-3"
+        "footer footer";
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: auto 1fr auto auto;
+      gap: 10px;
+      height: 100vh;
+    }
+    
+    .header {
+      grid-area: header;
+      background: linear-gradient(to right, #1a4d2e, #3c8c40);
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    
+    .sidebar {
+      grid-area: sidebar;
+      background: linear-gradient(to bottom, #1a4d2e, #3c8c40);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+    
+    .content_1 {
+      grid-area: content_1;
+      background: linear-gradient(135deg, #3c8c40, #71c55d);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+    
+    .content-2-3 {
+      grid-area: content-2-3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    
+    .content-2, .content-3 {
+      background: linear-gradient(135deg, #3c8c40, #71c55d);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+    
+    .footer {
+      grid-area: footer;
+      background: linear-gradient(to right, #1a4d2e, #3c8c40);
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    
+    .s_card {
+      width: 150px;
+      height: 150px;
+      background-color: white;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+.p_card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(150%) sepia(50%);
+  background-image: url('2.jpeg'); 
+  background-color: white;
+}
+
+.team-logo {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: contrast(150%) sepia(50%);
+  background-image: url('1.png'); 
+  background-color: white;
+}
+
+    
+    .trophy {
+      width: 80px;
+      height: 80px;
+      background-color: gold;
+      margin: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-weight: bold;
+    }
+    
+    .world-cup {
+      transform: rotate(15deg) scale(1.2);
+      background-color: gold;
+    }
+    
+    .champions-league {
+      transform: skew(10deg, 5deg) translateY(-10px);
+      background-color: silver;
+    }
+    
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+      }
+    }
+    
+    .ball {
+      width: 60px;
+      height: 60px;
+      background-color: white;
+      border-radius: 50%;
+      animation: bounce 2s infinite ease-in-out;
+      background-size: cover;
+    }
+    
+    .label {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "content_1"
+          "content-2-3"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+      .content-2-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #1a4d2e; padding: 10px;">
+    <a href="../index.html" style="color: white; text-decoration: none; font-weight: bold;">
+      ← Back to Main Portfolio
+    </a>
+  </nav>
+  
+  <div class="container">
+    <header class="header">
+      <h1>Soccer</h1>
+    </header>
+    
+    <aside class="sidebar">
+      <h2>Trophies</h2>
+      <div class="label">Famous Trophies:</div>
+      <div class="trophy world-cup">World Cup</div>
+      <div class="trophy champions-league">Champions League</div>
+    </aside>
+    
+    <main class="content_1">
+      <div>
+        <h2>Game </h2>
+        <div class="ball"></div>
+      </div>
+    </main>
+    
+    <section class="content-2-3">
+      <div class="content-2">
+        <h2>Best Players</h2>
+        <div class="s_card">
+          <div class="p_card"></div>
+        </div>
+      </div>
+      
+      <div class="content-3">
+        <h2>Best Teams</h2>
+        <div class="s_card">
+          <div class="team-logo"></div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <h2>Soccer</h2>
+    </footer>
+  </div>
+</body>
+</html>

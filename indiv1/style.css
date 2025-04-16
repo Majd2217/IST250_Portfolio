@@ -1,0 +1,79 @@
+/* Multiple selectors setting a single style */
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: #2c3e50;
+}
+
+/* Background color for pages */
+body {
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Styling by ID */
+#introduction {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* CSS attribute not commonly discussed in basic classes */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Another advanced CSS attribute */
+}
+
+/* Border around an element */
+.featured-image {
+    border: 3px solid #3498db;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.lists-container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Text color modification */
+.media-section {
+    color: #34495e;
+    text-align: center;
+}
+
+/* Styling for the item details page */
+#item-details {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.item-image {
+    border: 3px solid #3498db;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.details-text {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Link styling */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Advanced CSS animation property */
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
